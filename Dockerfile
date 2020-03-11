@@ -26,6 +26,6 @@ COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certifi
 COPY --from=builder /go/bin/experia-v10-exporter /bin/experia-v10-exporter
 
 USER nobody
-EXPOSE 9205
+EXPOSE 9684
 
 ENTRYPOINT ["/bin/experia-v10-exporter"]
